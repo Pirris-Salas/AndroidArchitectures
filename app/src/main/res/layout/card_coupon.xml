@@ -49,11 +49,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/tvDescriptionShort"
-                android:textSize="12sp"
-                app:layout_constraintTop_toBottomOf="@+id/tvTitle" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginLeft="24dp"
+                android:textSize="11sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                android:layout_marginLeft="24dp"
                 android:layout_marginStart="24dp"
-                app:layout_constraintHorizontal_bias="0.0"/>
+                app:layout_constraintHorizontal_bias="0.0"
+                android:ellipsize="start"/>
         <TextView
                 android:text="TextView"
                 android:layout_width="wrap_content"
