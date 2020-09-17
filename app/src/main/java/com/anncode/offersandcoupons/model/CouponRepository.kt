@@ -1,6 +1,9 @@
 package com.anncode.offersandcoupons.model
 
+import androidx.lifecycle.MutableLiveData
+
 interface CouponRepository {
 
-    fun getCouponsAPI()
+    fun getCoupuns(): MutableLiveData<List<Coupon>>
+    fun callCouponsAPI()
 }

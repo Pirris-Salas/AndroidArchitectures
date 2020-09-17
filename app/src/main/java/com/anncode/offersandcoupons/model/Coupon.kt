@@ -70,9 +70,12 @@ class Coupon(couponJson: JsonObject?) : Serializable {
     private fun chunkWords(string: String, delimiter: Char, quantity: Int): String {
         val words = string.split(delimiter)
         var newString: String = ""
-
-        for (i in 0..quantity){
-            newString += words.get(i) + " "
+        if(words.size > quantity){
+            for (i in 0..quantity){
+                newString += words.get(i) + " "
+            }
+        }else{
+            newString = string
         }
 
         return newString
